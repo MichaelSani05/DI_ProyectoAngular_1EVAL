@@ -53,9 +53,79 @@
 
       <app-card [houses]="filteredData"/>
 
+
+      <!-- STATS -->
+      <div class="surface-ground px-4 py-5 md:px-6 lg:px-8 mt-5">
+        <div class="hero-title">
+          <h1>Our Stats</h1>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="surface-card shadow p-3">
+                    <div class="flex justify-content-between mb-3">
+                        <div>
+                            <span class="block text-500 font-medium mb-3">Orders</span>
+                            <div class="text-900 font-medium text-xl">7528</div>
+                        </div>
+                        <div class="flex align-items-center justify-content-center bg-blue-100 border-round stats-icon" style="width:2.5rem;height:2.5rem">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 512 512"><circle cx="176" cy="416" r="16" fill="none" stroke="#3440ea" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="400" cy="416" r="16" fill="none" stroke="#3440ea" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="#3440ea" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M48 80h64l48 272h256"/><path fill="none" stroke="#3440ea" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 288h249.44a8 8 0 0 0 7.85-6.43l28.8-144a8 8 0 0 0-7.85-9.57H128"/></svg>
+                        </div>
+                    </div>
+                    <span class="text-green-500 font-medium">241 more </span>
+                    <span class="text-500">than last year</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="surface-card shadow p-3 border-round">
+                    <div class="flex justify-content-between mb-3">
+                        <div>
+                            <span class="block text-500 font-medium mb-3">Average consumer earnings</span>
+                            <div class="text-900 font-medium text-xl">$2.100</div>
+                        </div>
+                        <div class="flex align-items-center justify-content-center bg-orange-100 border-round stats-icon" style="width:2.5rem;height:2.5rem">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="#eab034" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="#eab034"><path d="M20.943 16.835a15.76 15.76 0 0 0-4.476-8.616c-.517-.503-.775-.754-1.346-.986C14.55 7 14.059 7 13.078 7h-2.156c-.981 0-1.472 0-2.043.233c-.57.232-.83.483-1.346.986a15.76 15.76 0 0 0-4.476 8.616C2.57 19.773 5.28 22 8.308 22h7.384c3.029 0 5.74-2.227 5.25-5.165"/><path d="M7.257 4.443c-.207-.3-.506-.708.112-.8c.635-.096 1.294.338 1.94.33c.583-.009.88-.268 1.2-.638C10.845 2.946 11.365 2 12 2s1.155.946 1.491 1.335c.32.37.617.63 1.2.637c.646.01 1.305-.425 1.94-.33c.618.093.319.5.112.8l-.932 1.359c-.4.58-.599.87-1.017 1.035S13.837 7 12.758 7h-1.516c-1.08 0-1.619 0-2.036-.164S8.589 6.38 8.189 5.8zm6.37 8.476c-.216-.799-1.317-1.519-2.638-.98s-1.53 2.272.467 2.457c.904.083 1.492-.097 2.031.412c.54.508.64 1.923-.739 2.304c-1.377.381-2.742-.214-2.89-1.06m1.984-5.06v.761m0 5.476v.764"/></g></svg>
+                        </div>
+                    </div>
+                    <span class="text-green-500 font-medium">52% more </span>
+                    <span class="text-500">than last week</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="surface-card shadow p-3 border-round">
+                    <div class="flex justify-content-between mb-3">
+                        <div>
+                            <span class="block text-500 font-medium mb-3">Customers</span>
+                            <div class="text-900 font-medium text-xl">28441 </div>
+                        </div>
+                        <div class="flex align-items-center justify-content-center bg-cyan-100 border-round stats-icon" style="width:2.5rem;height:2.5rem">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="#00bfff" stroke-width="1.5"><circle cx="12" cy="6" r="4"/><path d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z"/></g></svg>
+                        </div>
+                    </div>
+                    <span class="text-green-500 font-medium">520  </span>
+                    <span class="text-500">newly registered</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="surface-card shadow p-3 border-round">
+                    <div class="flex justify-content-between mb-3">
+                        <div>
+                            <span class="block text-500 font-medium mb-3">Investors</span>
+                            <div class="text-900 font-medium text-xl">152 </div>
+                        </div>
+                        <div class="flex align-items-center justify-content-center bg-green-100 border-round stats-icon" style="width:2.5rem;height:2.5rem">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 14 14"><g fill="none" stroke="#5dd345" stroke-linecap="round"><path stroke-linejoin="round" d="M6.338 3.7a1 1 0 0 0-.943-.668H4.62a.893.893 0 0 0-.19 1.765l1.178.258a1 1 0 0 1-.214 1.977h-.667a1 1 0 0 1-.943-.666m1.278-3.334v-1m0 6v-1m1.907 6.467v-5.25a1.25 1.25 0 0 1 1.25-1.25v0a1.25 1.25 0 0 1 1.25 1.25v2.75h2a2 2 0 0 1 2 2v.5"/><path d="M5.063 9.564a4.531 4.531 0 1 1 4.489-3.911"/></g></svg>
+                        </div>
+                    </div>
+                    <span class="text-green-500 font-medium">15 more</span>
+                    <span class="text-500"> than last month</span>
+                </div>
+            </div>
+        </div>
+      </div>
+
       <!-- HERO 1 -->
       <div id="hero-1">
-        <div id="hero-1-title">
+        <div id="hero-1-title" class="hero-title">
           <h1>Handpicked <br> Properties</h1>
         </div>
         <div id="hero-1-text">
@@ -68,25 +138,98 @@
       <app-card [houses]="houses"/>
 
       <!-- HERO 2 -->
-      <div id="hero-2">
-        <div id="hero-2-title">
-
+      <div id="hero-2" class="grid grid-cols-1 md:grid-cols-2 md:gap-20">
+        <div id="hero-2-title" class="hero-title grid grid-cols-2 md:grid-cols-1">
+          <h1>Comprehensive Real <br> Solutions</h1>
+          <img src="../assets/images/hero-2-img.png" alt="">
         </div>
         <div id="hero-2-caracts">
           <div class="hero-2-caract">
-            
+            <div class="caract-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.728 16.137c-1.545-1.546-2.318-2.318-2.605-3.321c-.288-1.003-.042-2.068.45-4.197l.283-1.228c.413-1.792.62-2.688 1.233-3.302s1.51-.82 3.302-1.233l1.228-.284c2.13-.491 3.194-.737 4.197-.45c1.003.288 1.775 1.061 3.32 2.606l1.83 1.83C20.657 9.248 22 10.592 22 12.262c0 1.671-1.344 3.015-4.033 5.704c-2.69 2.69-4.034 4.034-5.705 4.034c-1.67 0-3.015-1.344-5.704-4.033z"/><path stroke-linecap="round" d="M15.39 15.39c.585-.587.664-1.457.176-1.946s-1.359-.409-1.945.177c-.585.586-1.456.665-1.944.177s-.409-1.359.177-1.944m3.535 3.535l.354.354m-.354-.354c-.4.401-.935.565-1.389.471m-2.5-4.36l.354.354m0 0c.331-.332.753-.5 1.146-.497"/><circle cx="8.607" cy="8.879" r="2" transform="rotate(-45 8.607 8.879)"/></g></svg>
+            </div>
+            <div class="caract-text">
+              <h2 class="caract-title">Property Rentals</h2>
+              <p class="caract-desc">We offer an extensive selection of rental properties, including furnished and unfurnished options across prime locations.</p>
+            </div>
           </div>
+
+          <div class="divider"></div>
+
           <div class="hero-2-caract">
-            
+            <div class="caract-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g fill="none" stroke="currentColor"><path d="m13.258 8.354l.904.805a.91.91 0 0 1 .196 1.169l-1.09 1.862a.94.94 0 0 1-.35.341a1 1 0 0 1-.478.125a1 1 0 0 1-.306-.046l-1.157-.382q-.304.195-.632.349l-.243 1.173a.93.93 0 0 1-.339.544a.97.97 0 0 1-.618.206H6.888a.97.97 0 0 1-.618-.206a.93.93 0 0 1-.338-.544l-.244-1.173a6 6 0 0 1-.627-.35L3.9 12.61a1 1 0 0 1-.306.046a1 1 0 0 1-.477-.125a.94.94 0 0 1-.35-.34l-1.129-1.863a.91.91 0 0 1 .196-1.187L2.737 8v-.354l-.904-.805a.91.91 0 0 1-.196-1.169L2.766 3.81a.94.94 0 0 1 .35-.341a1 1 0 0 1 .477-.125a1 1 0 0 1 .306.028l1.138.4q.305-.195.632-.349l.244-1.173a.93.93 0 0 1 .338-.544a.97.97 0 0 1 .618-.206h2.238a.97.97 0 0 1 .618.206c.175.137.295.33.338.544l.244 1.173q.325.155.627.35l1.162-.382a.98.98 0 0 1 .784.078c.145.082.265.2.35.34l1.128 1.863a.91.91 0 0 1-.182 1.187l-.918.782z"/><path d="M10.5 8a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/></g></svg>
+            </div>
+            <div class="caract-text">
+              <h2 class="caract-title">Property Management</h2>
+              <p class="caract-desc">We offer comprehensive property management services to take the stress out of property ownership.</p>
+            </div>
           </div>
+
+          <div class="divider"></div>
+
           <div class="hero-2-caract">
-            
+            <div class="caract-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><path d="M4 12a8 8 0 1 1 16 0v5.09c0 .848 0 1.27-.126 1.609a2 2 0 0 1-1.175 1.175C18.36 20 17.937 20 17.09 20H12a8 8 0 0 1-8-8Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 11h6m-3 4h3"/></g></svg>
+            </div>
+            <div class="caract-text">
+              <h2 class="caract-title">Investment Advice</h2>
+              <p class="caract-desc">The investment market offers numerous opportunities, but understanding where and when to invest can be challenging.</p>
+            </div>
           </div>
+
+          <div class="divider"></div>
+
           <div class="hero-2-caract">
-            
+            <div class="caract-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><path d="M20 22v-5c0-1.886 0-2.828-.586-3.414S17.886 13 16 13l-4 9l-4-9c-1.886 0-2.828 0-3.414.586S4 15.114 4 17v5"/><path d="m12 15l-.5 4l.5 1.5l.5-1.5zm0 0l-1-2h2zm3.5-8.5v-1a3.5 3.5 0 1 0-7 0v1a3.5 3.5 0 1 0 7 0"/></g></svg>
+            </div>
+            <div class="caract-text">
+              <h2 class="caract-title">Financial Assistance</h2>
+              <p class="caract-desc">Real estate purchases can involve complex legal and financial processes. Our team of experts is ready to assist you at every stage.</p>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- HERO 3 -->
+      <div id="hero-3">
+        <div id="hero-3-content">
+          <div id="hero-3-texts">
+            <h1 id="hero-3-title" class="hero-title">Personalized advice</h1>
+            <p id="hero-3-desc">Get in touch with us today. Our profesional team is ready to assist you. </p>
+          </div>
+          <div id="form">
+            <form id="contact-form" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="inputGroup">
+                <input type="text" required="" autocomplete="off">
+                <label for="name">Name</label>
+              </div>
+              <div class="inputGroup">
+                <input type="text" required="" autocomplete="off">
+                <label for="email">Email</label>
+              </div>
+              <div class="inputGroup">
+                <input type="text" required="" autocomplete="off">
+                <label for="phone">Phone number</label>
+              </div>
+              <div class="inputGroup">
+                <input type="text" required="" autocomplete="off">
+                <label for="country">Country</label>
+              </div>
+              <div class="textarea">
+                <textarea name="comment" id="comment" placeholder="Comment" class="p-3"></textarea>
+              </div>
+              <div></div>
+              <div>
+                <button type="submit" class="submit-button">Submit</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
 
     </div>
 

@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     position: fixed;
+    box-sizing: border-box;
   }
   
   #content{
@@ -17,10 +18,16 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: white;
+    margin-top: -35px;
+    border-radius: 25px;
+    padding: 50px 20px;
+    box-sizing: border-box;
   }
 
   #content-component{
     max-width: 1200px;
+    width: 100%;
   }
 
   .main-title{
@@ -94,7 +101,7 @@
     right: 10px;
   }
 
-  .search button{
+  .search button, .submit-button{
     padding: 15px 20px;
     background-color: #b37a00;
     border-radius: 25px;
@@ -110,14 +117,6 @@
     align-items: end;
   }
 
-  #content{
-    background-color: white;
-    margin-top: -45px;
-    border-radius: 25px;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
   #hero-1{
     padding: 100px 20px;
     display: flex;
@@ -131,12 +130,150 @@
     width: 50%;
   }
 
-  #hero-1-title h1{
+  .hero-title{
     font-size: 32pt;
     margin: 0;
+    font-weight: 600;
+    letter-spacing: -1px;
   }
 
 
+  #hero-2{
+    padding: 100px 20px;
+    justify-content: space-between;
+  }
+
+
+
+  #hero-2-title{
+    width: 100%;
+    height: fit-content;
+  }
+
+  #hero-2-title h1{
+    margin-bottom: 50px;
+  }
+
+  #hero-2-caracts{
+    padding: 25px 0px;
+    width: 90%;
+  }
+
+  .caract-icon{
+    padding: 8px;
+    height: fit-content;
+    background-color: #fcf3e2;
+    border-radius: 25px;
+    margin-right: 10px;
+  }
+
+  .caract-icon svg{
+    width: 20px;
+    height: 20px;
+    color: #b37a00;
+  }
+
+  .hero-2-caract{
+    display: flex;
+  }
+
+  .caract-title{
+    font-size: 18pt;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
+
+  .caract-desc{
+    margin-top: 25px;
+    color: grey;
+    letter-spacing: -0.2px;
+    font-size: 11pt;
+  }
+
+  .divider{
+    margin: 30px 0px;
+    height: 0.5px;
+    width: 100%;
+    border-top: 0.1px solid lightgrey;
+  }
+
+  .surface-card{
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+
+  .stats-icon{
+    border-radius: 5px;
+  }
+
+  #hero-3{
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    background-image: url('../assets/images/hero-3-img.jpeg');
+    background-size: 100% 100%;
+  }
+
+  #hero-3-desc{
+    margin-top: 20px;
+    color: grey;
+  }
+
+  #form{
+    margin-top: 20px;
+    padding: 25px 20px;
+    border-radius: 20px;
+    width: 60%;
+    background-color: white;
+  }
+
+  .inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 190px;
+    position: relative;
+  }
+
+  .inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+  }
+
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0em;
+    background-color: white;
+  }
+
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: #b37a00;
+  }
+
+  textarea{
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 20px;
+  }
+  
+  .submit-button{
+    margin-left: 0%;
+  }
   
   @media screen and (max-width: 760px) {
     .main-title{
@@ -150,6 +287,10 @@
 
     #hero-1-text{
       width: 100%;
+    }
+
+    #hero-2-title h1{
+      font-size: 24pt;
     }
 
   }
