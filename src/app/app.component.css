@@ -1,0 +1,126 @@
+#banner{
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://burst.shopifycdn.com/photos/houses-in-the-distance-along-hillside.jpg?width=925&format=pjpg&exif=0&iptc=0');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+  }
+  
+  #content{
+    position: absolute;
+    top: 60vh;
+  }
+
+  .main-title{
+    margin-top: 100px;
+    font-size: 44pt;
+    font-weight: 500;
+  }
+
+  #banner p{
+    width: 560px;
+    text-align: center;
+    opacity: 0.6;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  #filters{
+    display: flex;
+    justify-content: center;
+  }
+
+  .filter{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-name{
+    color: #b37a00;
+    font-weight: 600;
+    width: 75%;
+  }
+
+
+  select{
+    border: none;
+    appearance: none;
+    width: 100%;
+    background-color: transparent;
+    padding: 15px 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    background-color: #ededed;
+    position: relative;
+  }
+
+  .filter-select{
+    position: relative;
+    width: 80%;
+  }
+
+  .filter-select::after{
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+
+  .filter-select svg{
+    position: absolute;
+    right: 10px;
+  }
+
+  .search button{
+    padding: 15px 20px;
+    background-color: #b37a00;
+    border-radius: 25px;
+    color: white;
+    border: none;
+  }
+
+  .search{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  #content{
+    background-color: white;
+    margin-top: -45px;
+    border-radius: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #hero-1{
+    padding: 100px 20px;
+    display: flex;
+  }
+
+  #hero-1-title{
+    width: 50%;
+  }
+
+  #hero-1-text{
+    width: 50%;
+  }
+
+  #hero-1-title h1{
+    font-size: 32pt;
+    margin: 0;
+  }

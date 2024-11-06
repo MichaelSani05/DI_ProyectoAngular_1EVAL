@@ -1,0 +1,25 @@
+<div id="cards">
+    <div class="card" *ngFor="let house of houses; index as i">
+        <div class="card-image">
+            <img src="../../assets/images/{{ house.image }}" alt="">
+        </div>
+        <div class="card-content">
+            <div class="card-text">
+                <h3 class="card-text-title">{{ house.titulo }}</h3>
+                <div class="card-location">
+                    <div class="detail">
+                        Location:
+                    </div> 
+                    {{ house.location }}
+                </div>
+                <div class="card-price">
+                    <div class="detail">
+                        Price:
+                    </div>
+                    {{ house.price }} €
+                </div>
+            </div>
+            <button type="button" class="details-button">Details</button>
+        </div>
+    </div>
+</div>
