@@ -14,6 +14,13 @@
   #content{
     position: absolute;
     top: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #content-component{
+    max-width: 1200px;
   }
 
   .main-title{

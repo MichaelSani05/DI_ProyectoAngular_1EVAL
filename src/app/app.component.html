@@ -5,65 +5,90 @@
     <p>Wheter you're buying, selling or renting, our experienced team is here to guide you every step of the way.</p>
   </div>
   <div id="content">
-    <div id="filters">
-      <div class="filter">
-        <p class="filter-name">Building Type</p>
-        <div class="filter-select">
-          <select name="type" id="type">
-            <option value="Apartment">Apartamento</option>
-            <option value="Chalet">Chalet</option>
-            <option value="Dúplex">Dúplex</option>
-          </select>
+    
+    <div id="content-component">
+      <div id="filters">
+        <div class="filter">
+          <p class="filter-name">Building Type</p>
+          <div class="filter-select">
+            <select name="type" id="type">
+              <option value="Apartment">Apartamento</option>
+              <option value="Chalet">Chalet</option>
+              <option value="Dúplex">Dúplex</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter">
+          <p class="filter-name">Category</p>
+          <div class="filter-select">
+            <select name="type" id="type">
+              <option value="Buy">Buy</option>
+              <option value="Rent">Rent</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter">
+          <p class="filter-name">Location</p>
+          <div class="filter-select">
+            <select name="type" id="type">
+              <option value="Apartment">Valencia</option>
+              <option value="Chalet">Madrid</option>
+              <option value="Dúplex">Barcelona</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter">
+          <p class="filter-name">Style</p>
+          <div class="filter-select">
+            <select name="type" id="type">
+              <option value="Apartment">Minimalist</option>
+              <option value="Chalet">Modern</option>
+              <option value="Dúplex">Abstract</option>
+            </select>
+          </div>
+        </div>
+        <div class="search">
+          <button type="button">Search</button>
         </div>
       </div>
-      <div class="filter">
-        <p class="filter-name">Category</p>
-        <div class="filter-select">
-          <select name="type" id="type">
-            <option value="Buy">Buy</option>
-            <option value="Rent">Rent</option>
-          </select>
+  
+      <!-- HERO 1 -->
+      <div id="hero-1">
+        <div id="hero-1-title">
+          <h1>Handpicked <br> Properties</h1>
+        </div>
+        <div id="hero-1-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24"><path fill="#b37a00" d="M10 2v2.26l2 1.33V4h10v15h-5v2h7V2zM7.5 5L0 10v11h15V10zM14 6v.93L15.61 8H16V6zm4 0v2h2V6zM7.5 7.5L13 11v8h-3v-6H5v6H2v-8zM18 10v2h2v-2zm0 4v2h2v-2z"/></svg>
+          <p>Browse our exclusive selection of top-rated properties. From modern apartments in the city to spacious family homes in the suburbs, we have something to suit every lifestyle and budget.</p>
         </div>
       </div>
-      <div class="filter">
-        <p class="filter-name">Location</p>
-        <div class="filter-select">
-          <select name="type" id="type">
-            <option value="Apartment">Valencia</option>
-            <option value="Chalet">Madrid</option>
-            <option value="Dúplex">Barcelona</option>
-          </select>
-        </div>
+  
+      <!-- CARDS -->
+      <div id="cards">
+        <app-card [houses]="houses"/>
       </div>
-      <div class="filter">
-        <p class="filter-name">Style</p>
-        <div class="filter-select">
-          <select name="type" id="type">
-            <option value="Apartment">Minimalist</option>
-            <option value="Chalet">Modern</option>
-            <option value="Dúplex">Abstract</option>
-          </select>
-        </div>
-      </div>
-      <div class="search">
-        <button type="button">Search</button>
-      </div>
-    </div>
 
-    <!-- HERO 1 -->
-    <div id="hero-1">
-      <div id="hero-1-title">
-        <h1>Handpicked <br> Properties</h1>
-      </div>
-      <div id="hero-1-text">
-        <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24"><path fill="#b37a00" d="M10 2v2.26l2 1.33V4h10v15h-5v2h7V2zM7.5 5L0 10v11h15V10zM14 6v.93L15.61 8H16V6zm4 0v2h2V6zM7.5 7.5L13 11v8h-3v-6H5v6H2v-8zM18 10v2h2v-2zm0 4v2h2v-2z"/></svg>
-        <p>Browse our exclusive selection of top-rated properties. From modern apartments in the city to spacious family homes in the suburbs, we have something to suit every lifestyle and budget.</p>
-      </div>
-    </div>
+      <!-- HERO 2 -->
+      <div id="hero-2">
+        <div id="hero-2-title">
 
-    <!-- CARDS -->
-    <div id="cards">
-      <app-card [houses]="houses"/>
+        </div>
+        <div id="hero-2-caracts">
+          <div class="hero-2-caract">
+            
+          </div>
+          <div class="hero-2-caract">
+            
+          </div>
+          <div class="hero-2-caract">
+            
+          </div>
+          <div class="hero-2-caract">
+            
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
