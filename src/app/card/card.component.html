@@ -1,5 +1,5 @@
-<div id="cards">
-    <div class="card" *ngFor="let house of houses; index as i">
+<div id="cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="card" *ngFor="let house of houses">
         <div class="card-image">
             <img src="../../assets/images/{{ house.image }}" alt="">
         </div>

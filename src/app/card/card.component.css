@@ -1,8 +1,5 @@
 #cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 350px;
-    gap: 15px;
+    height: auto;
 }
 
 .card{
@@ -13,6 +10,7 @@
     align-items: end;
     position: relative;
     overflow: hidden;
+    min-height: 450px;
 }
 
 .card-image{

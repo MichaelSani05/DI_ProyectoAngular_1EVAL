@@ -9,49 +9,50 @@
     <div id="content-component">
       <div id="filters">
         <div class="filter">
-          <p class="filter-name">Building Type</p>
+          <p class="filter-name">Type</p>
           <div class="filter-select">
-            <select name="type" id="type">
-              <option value="Apartment">Apartamento</option>
-              <option value="Chalet">Chalet</option>
-              <option value="Dúplex">Dúplex</option>
+            <select [(ngModel)]="selectedType" (change)="filterData()">
+              <option value="">All</option>
+              <option *ngFor="let type of types" value="{{type.name}}">{{type.name}}</option>
             </select>
           </div>
         </div>
         <div class="filter">
           <p class="filter-name">Category</p>
           <div class="filter-select">
-            <select name="type" id="type">
-              <option value="Buy">Buy</option>
-              <option value="Rent">Rent</option>
+            <select [(ngModel)]="selectedCategory" (change)="filterData()">
+              <option value="">All</option>
+              <option *ngFor="let category of categories" value="{{category.name}}">{{category.name}}</option>
             </select>
           </div>
         </div>
         <div class="filter">
           <p class="filter-name">Location</p>
           <div class="filter-select">
-            <select name="type" id="type">
-              <option value="Apartment">Valencia</option>
-              <option value="Chalet">Madrid</option>
-              <option value="Dúplex">Barcelona</option>
+            <select [(ngModel)]="selectedLocation" (change)="filterData()">
+              <option value="">All</option>
+              <option *ngFor="let location of locations" value="{{location.name}}">{{location.name}}</option>
             </select>
           </div>
         </div>
         <div class="filter">
           <p class="filter-name">Style</p>
           <div class="filter-select">
-            <select name="type" id="type">
-              <option value="Apartment">Minimalist</option>
-              <option value="Chalet">Modern</option>
-              <option value="Dúplex">Abstract</option>
+            <select [(ngModel)]="selectedStyle" (change)="filterData()" >
+              <option value="">All</option>
+              <option *ngFor="let style of styles" value="{{style.name}}">{{style.name}}</option>
             </select>
           </div>
         </div>
         <div class="search">
-          <button type="button">Search</button>
+          <button type="button" (click)="filterData()">Search</button>
         </div>
       </div>
-  
+      
+      <br><br>
+
+      <app-card [houses]="filteredData"/>
+
       <!-- HERO 1 -->
       <div id="hero-1">
         <div id="hero-1-title">
@@ -64,9 +65,7 @@
       </div>
   
       <!-- CARDS -->
-      <div id="cards">
-        <app-card [houses]="houses"/>
-      </div>
+      <app-card [houses]="houses"/>
 
       <!-- HERO 2 -->
       <div id="hero-2">
