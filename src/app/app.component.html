@@ -79,7 +79,7 @@
                 <div class="surface-card shadow p-3 border-round">
                     <div class="flex justify-content-between mb-3">
                         <div>
-                            <span class="block text-500 font-medium mb-3">Average consumer earnings</span>
+                            <span class="block text-500 font-medium mb-3">Average earnings</span>
                             <div class="text-900 font-medium text-xl">$2.100</div>
                         </div>
                         <div class="flex align-items-center justify-content-center bg-orange-100 border-round stats-icon" style="width:2.5rem;height:2.5rem">
@@ -200,6 +200,10 @@
             <p id="hero-3-desc">Get in touch with us today. Our profesional team is ready to assist you. </p>
           </div>
           <div id="form">
+            <div id="form-title">
+              <div id="divider-2"></div>
+              <h1 id="hero-3-title">Contact Us</h1>
+            </div>
             <form id="contact-form" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div class="inputGroup">
                 <input type="text" required="" autocomplete="off">
@@ -217,11 +221,11 @@
                 <input type="text" required="" autocomplete="off">
                 <label for="country">Country</label>
               </div>
-              <div class="textarea">
-                <textarea name="comment" id="comment" placeholder="Comment" class="p-3"></textarea>
+              <div class="inputGroup grid-cols-2" id="textarea">
+                <input type="text" required="" autocomplete="off">
+                <label for="comment">Comment</label>
               </div>
-              <div></div>
-              <div>
+              <div id="submit-form">
                 <button type="submit" class="submit-button">Submit</button>
               </div>
             </form>
